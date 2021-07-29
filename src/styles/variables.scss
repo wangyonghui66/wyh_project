@@ -1,0 +1,14 @@
+$borderColor: #EBECEF;
+
+
+
+// common 
+$colorBack:#000000;
+$colorBlue: #1384FF;
+$colorGrey: #a0a0a0;
+$colorRed: #F13538;
+$colorLightRed: #FFD2D2;
+$colorYellow: #FFBE41;
+@function pxTorem($px) {
+  @return $px / 37.5 * 1rem;
+}

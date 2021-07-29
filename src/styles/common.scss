@@ -1,0 +1,98 @@
+@import './variables.scss';
+@import './tabbar.scss';
+
+* {
+  box-sizing: border-box;
+}
+input {
+  outline: none;
+}
+textarea:disabled {
+  background: #fff;
+}
+input:disabled {
+  background: #fff;
+}
+
+.rotate {
+  animation: rotate 0.8s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+
+// tranisition
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+.bdBottom::after {
+  content: '';
+  height: 0.026667rem;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bdleft::after {
+  content: '';
+  width: 0.026667rem;
+  height: 1.52rem;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transform: scalex(0.5);
+  transform: scalex(0.5);
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+}
+
+
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+ * {
+  box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font-weight: normal;
+   vertical-align: baseline;
+}
